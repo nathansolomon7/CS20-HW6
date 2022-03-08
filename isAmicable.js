@@ -11,10 +11,10 @@
  });
  
 //sums all the values stored in an array and returns the sum
-function sumUpArrayValues(factorsOfval1){
+function sumUpArrayValues(factorsArray){
     partialSum = 0;
-    sumofVal1 = factorsOfval1.reduce((partialSum, a) => partialSum + a, 0);
-    return sumofVal1;
+    sumofArr = factorsArray.reduce((partialSum, a) => partialSum + a, 0);
+    return sumofArr;
 }
 
 //displays the results of the program to a div
@@ -29,7 +29,7 @@ function displayFactors(factorsOfval1, factorsOfval2, value1, value2) {
     Factors of ${value2}: ${factorsOfval2}`; 
      displayFactorsDiv.innerHTML = factorsVal1String;
 };
-//returns an array of factors for a specfic inputted value
+//calculates and returns an array of factors for a specfic inputted value
 function calculateFactors(val) {
     var factors = new Array();
     
@@ -48,7 +48,8 @@ function isAmicable(factorsOfval1, factorsOfval2, value1, value2) {
     var isAmicable;
     sumofVal1 = sumUpArrayValues(factorsOfval1);
      sumofVal2 = sumUpArrayValues(factorsOfval2);
-
+     console.log("sumofVal1: "+sumofVal1);
+      console.log("sumofVal2: "+sumofVal2);
     if(sumofVal1 == value2 && sumofVal2 == value1) {
         isAmicableString = "are";
         return isAmicableString;
