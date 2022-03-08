@@ -48,8 +48,6 @@ function isAmicable(factorsOfval1, factorsOfval2, value1, value2) {
     var isAmicable;
     sumofVal1 = sumUpArrayValues(factorsOfval1);
      sumofVal2 = sumUpArrayValues(factorsOfval2);
-     console.log("sumofVal1: "+sumofVal1);
-      console.log("sumofVal2: "+sumofVal2);
     if(sumofVal1 == value2 && sumofVal2 == value1) {
         isAmicableString = "are";
         return isAmicableString;
