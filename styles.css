@@ -1,0 +1,31 @@
+#titleDiv h1{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+#titleDiv{
+    width: 100%;
+    background-color: #1ed1e1;
+}
+
+#inputForm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resultsDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#displayFactorsDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#wrapperDiv{
+     padding: 10px;
+     font-size: 30px;
+     margin-left: 40px;
+}
